@@ -1,6 +1,5 @@
 ﻿using AForge;
 using BioGTK;
-using com.sun.org.apache.xml.@internal.resolver.helpers;
 using Gtk;
 namespace PluginExample
 {
