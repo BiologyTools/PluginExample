@@ -11,7 +11,6 @@ namespace PluginExample
         ImageView v;
         public void Execute(string[] args)
         {
-            //Since we will be using the GUI we call App.Initialize();
             BioImage bm = BioImage.OpenFile("F:\\TESTIMAGES\\CZI\\16Bit-ZStack.czi",0,false,false);
             v = ImageView.Create(bm);
             v.Show();
