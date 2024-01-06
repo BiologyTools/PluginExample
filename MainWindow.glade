@@ -3,9 +3,14 @@
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkWindow" id="mainWindow">
+    <property name="width-request">400</property>
+    <property name="height-request">250</property>
     <property name="can-focus">False</property>
+    <property name="resizable">False</property>
     <child>
       <object class="GtkFixed">
+        <property name="width-request">400</property>
+        <property name="height-request">250</property>
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <child>
@@ -20,15 +25,23 @@
           </packing>
         </child>
         <child>
-          <object class="GtkTextView" id="textBox">
+          <object class="GtkScrolledWindow">
             <property name="width-request">400</property>
             <property name="height-request">250</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
+            <property name="shadow-type">in</property>
+            <child>
+              <object class="GtkTextView" id="textBox">
+                <property name="width-request">400</property>
+                <property name="height-request">250</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+              </object>
+            </child>
           </object>
           <packing>
-            <property name="x">5</property>
-            <property name="y">25</property>
+            <property name="y">20</property>
           </packing>
         </child>
       </object>
